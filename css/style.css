@@ -82,6 +82,7 @@
     grid-column: col-start 1 / span 9;
     grid-row: 5 / 9;
     padding-top: 10%;
+    padding-left: 3.333%;
 }
 
 #info-bubble3 {
@@ -143,10 +144,14 @@ body {
 
 
 #skills-bubble {
-    height: 490px;
-    width: 725px;
+    height: 820px;
+    width: 770px;
     background-image: url('../images/skills-image-bubble.svg');
+    padding-top: 2%;
+}
 
+#skills-bubble-header {
+    padding-top: 3.333%;
 }
 
 #contact-me-bubble {
@@ -155,6 +160,7 @@ body {
     height: 600px;
     width: 650px;
     background-image: url('../images/contact-bubble2.svg');
+    padding-top: 5%;
 }
 
 .svg-container {
