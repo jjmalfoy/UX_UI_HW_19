@@ -13,11 +13,11 @@ function jumpToElement(element) {
 
 
 $("#parent-button-info").on("click", () => {
-    console.log('Clicked on info...');
+    console.log('Clicked on about me...');
     var nav_button = $("#navigation-button");
     // jump to projects-section-box
     
-    if (nav_button.text().includes('INFO')) {
+    if (nav_button.text().includes('ABOUT ME')) {
         jumpToElement("#projects-section-box")
         // Hide projects box
         $("#projects-section-box").css("display", "none");
@@ -32,7 +32,7 @@ $("#parent-button-info").on("click", () => {
         // Hide about me section
         $("#about-me-section-box").css("display", "none")
         // Change text in navigation-button to INFO
-        $("#navigation-button").html("INFO")
+        $("#navigation-button").html("ABOUT ME")
     }
 })
 

@@ -4,7 +4,7 @@
     left: 0px;
     top: 0px;
     background: #D5E2FD;
-}
+}    
 
 .header-title-1 {
     padding-top: 7%;
@@ -41,7 +41,7 @@
 
 #navigation-button {
     /* This controls how the button looks*/
-    width: 157px;
+    width: 250px;
     height: 74px;
     left: 1277px;
     top: 25px;
@@ -55,7 +55,7 @@
 }
 
 #parent-button-info {
-    width: 157px;
+    width: 250px;
     height: 74px;
     left: 1550px;
     top: 25px;
@@ -90,9 +90,8 @@
     grid-row: 3 / 7;
 }
 
-.projects-scroll-grid {
+.two-column-grid-1 {
     display: grid;
-    grid-template-rows: repeat(2, [row-start] 1fr);
     grid-template-columns: repeat(2, [col-start] 1fr);
     padding-top: 25px;
     row-gap: 50px;
@@ -125,7 +124,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
-    line-height: 26px;
+    line-height: 40px;
     color: #000000;
     width: 500px;
 }
@@ -175,6 +174,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .row {
@@ -197,19 +197,19 @@ body {
 .no-bullet-list {
     list-style-type: none;
 }
-.projects-1 {
+.two-column-left-first-row {
     grid-column: col-start 1 / span 1;
     grid-row: 1 / 2;
 }
-.projects-2 {
+.two-column-left-second-row {
     grid-column: col-start 1 / span 1;
     grid-row: 2 / 2;
 }
-.project-image-1 {
+.two-column-right-first-row {
     grid-column: col-start 2 / span 1;
     grid-row: 1 / 2;
 }
-.project-image-2 {
+.two-column-right-second-row {
     grid-column: col-start 2 / span 1;
     grid-row: 2 / 2;
 }
@@ -221,11 +221,21 @@ body {
     column-gap: 33%;
 }
 
-#about-me-section-box {
+#about-me-section-wrapper {
     display: none;
 }
 
 #projects-section-box {
     display: flex;
 }
+
+#about-intro {
+    padding-right: 67%;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    color: #000000;
+}
+
 
