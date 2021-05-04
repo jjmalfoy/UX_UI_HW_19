@@ -11,13 +11,18 @@
             <!-- Header -->
             <div class="info-banner row header">
                 <div id="parent-button-info">
-                    <div id="navigation-button">
+                    <div class="navigation-button" id="about-button">
                         ABOUT ME
+                    </div>
+                    <div class="navigation-button" id="projects-button">
+                        PROJECTS
                     </div>
                 </div>   
 
                 <!-- Grid wrapper -->
-                <div class="wrapper">
+                <div class="wrapper" id="header-wrapper">
+                    
+                    <!-- Start of HOME section -->
 
                     <!-- Author bubble -->
                     <div id="info-bubble1" class="info-bubble">
@@ -58,8 +63,32 @@
                                 </ul>
                             </div>
                         
+                        </div>
                     </div>
                 </div>
+                <!-- end HOME section -->
+
+                <!-- start ABOUT ME section -->
+                <div class="box" id="about-me-section-box">   
+                    <div id="about-intro">Hi!</div>  
+                    <div class="two-column-grid-1"> 
+                        <div class="project-content">
+                            I am a UX Designer. My goal is to help make technology more accessible
+                            through design and empathy. I aim to truly understand the user’s point of 
+                            view through interviews and research. Design thinking centers around empathy 
+                            and the user and my diverse background in healthcare as a registered nurse has
+                            helped hone my empathic abilities and really understand people. I have a keen attention 
+                            to detail and am able to quickly think critically in order to solve problems. I have 
+                            experince in ux research, ui design and interaction design and excels in soft 
+                            skills such as empathy, leadership and communication. 
+                        </div>
+                        <div id="about-me-image">
+                            <img src="assets/images/placeholder.png" alt="placeholder image for portrait." width="632" height="506"/>
+        
+                        </div>
+                    </div>
+                </div>
+                <!-- end ABOUT ME section -->
 
                 </div>
                     <!-- Close banner -->
@@ -67,10 +96,14 @@
         </div>    
             <!-- Projects Section -->
         <div class="box" id="projects-section-box">
+            <!-- Title -->
             <div class="project-title-1">
                 My Projects:
             </div>
+            
             <div class="two-column-grid-1 row">
+
+                <!-- start project 1 -->
                 <div class="two-column-left-first-row">
                     <div class="project-title-2">Nugget</div>
                         <div class="project-content">
@@ -84,7 +117,8 @@
                 <div class="two-column-right-first-row">
                     <img src="assets/images/NuggetApp 1.png" alt="Nugget App Welcome page" width="632" height="506"/>
                 </div>  
-                    
+                
+                <!-- start project 2 -->
                 <div class="two-column-left-second-row">
                     <div class="project-title-2">
                         <p>Globalgrassroots.org</p>
@@ -97,33 +131,13 @@
                             <p>Role: UI Designer</p>
                         </div>
                 </div>
-                        <div class="two-column-grid-right-second-row">
-                            <img src="assets/images/Globalgrassroots 1.png" alt="Globalgrassroots redesign homepage" width="632" height="506"/>
-                        </div>    
+                <div class="two-column-grid-right-second-row">
+                    <img src="assets/images/Globalgrassroots 1.png" alt="Globalgrassroots redesign homepage" width="632" height="506"/>
+                </div>    
             </div>
-        </div>
-
-        <!-- About me section -->
-        
-        <div class="box">   
-            <div id="about-intro">Hi!</div>  
-            <div class="two-column-grid-1"> 
-                <div class="project-content">
-                    I am a UX Designer. My goal is to help make technology more accessible
-                    through design and empathy. I aim to truly understand the user’s point of 
-                    view through interviews and research. Design thinking centers around empathy 
-                    and the user and my diverse background in healthcare as a registered nurse has
-                    helped hone my empathic abilities and really understand people. I have a keen attention 
-                    to detail and am able to quickly think critically in order to solve problems. I have 
-                    experince in ux research, ui design and interaction design and excels in soft 
-                    skills such as empathy, leadership and communication. 
-                </div>
-                <div id="about-me-image">
-                    <img src="assets/images/placeholder.png" alt="placeholder image for portrait." width="632" height="506"/>
-
-                </div>
-            </div>
-        </div>
+        </div>        
+    
+    <!-- Begin footer -->
     <footer>
            <div class="footer-block-grid">
                <div class="inline-block">
@@ -143,5 +157,6 @@
            </div>
        </footer>
     </body>
+    <!-- Load local js files here -->
     <script src="assets/js/index.js"></script>
 </html>

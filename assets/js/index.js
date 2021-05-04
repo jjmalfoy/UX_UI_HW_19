@@ -10,29 +10,30 @@ function jumpToElement(element) {
     }
 
 }
-
-
-$("#parent-button-info").on("click", () => {
-    console.log('Clicked on about me...');
-    var nav_button = $("#navigation-button");
+$("#projects-button").on("click", () => {
     // jump to projects-section-box
-    
-    if (nav_button.text().includes('ABOUT ME')) {
-        jumpToElement("#projects-section-box")
-        // Hide projects box
-        $("#projects-section-box").css("display", "none");
-        // Show about me section
-        $("#about-me-section-box").css("display", "flex")
-        // Change text in navigation-button to Projects
-        $("#navigation-button").html("PROJECTS")
-    } else {
-        jumpToElement("#about-me-section-box")
-        // Show projects box
-        $("#projects-section-box").css("display", "flex");
-        // Hide about me section
-        $("#about-me-section-box").css("display", "none")
-        // Change text in navigation-button to INFO
-        $("#navigation-button").html("ABOUT ME")
-    }
+    jumpToElement("#projects-section-box")
 })
+
+$("#about-button").on("click", () => {
+    var buttonText = $("#about-button").text();
+
+    console.log('got hur')
+
+    if (buttonText.includes('ABOUT ME')) {
+        // Hide projects box
+        $("#header-wrapper").css("display", "none");
+        // Show about me section
+        $("#about-me-section-box").css("display", "flex");
+        $("#about-button").html("HOME")
+    } else {
+        console.log('got here projects')
+        // remove about me section
+        $("#about-me-section-box").css("display", "none");
+        // show home page
+        $("#header-wrapper").css("display", "grid");
+        // change button back to about me
+        $("#about-button").html("ABOUT ME");
+    }
+});
 

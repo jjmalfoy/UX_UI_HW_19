@@ -39,7 +39,7 @@
     padding-left: 15%;
 }
 
-#navigation-button {
+.navigation-button {
     /* This controls how the button looks*/
     width: 250px;
     height: 74px;
@@ -221,7 +221,7 @@ body {
     column-gap: 33%;
 }
 
-#about-me-section-wrapper {
+#about-me-section-box {
     display: none;
 }
 
